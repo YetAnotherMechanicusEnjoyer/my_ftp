@@ -9,9 +9,9 @@ on:
       - "ga-ignore-**"
 
 env:
-  MIRROR_URL: git@github.com:EpitechPGE2-2025/G-OOP-400-BDX-4-1-tekspice-11.git
-  MIRROR_REPO: EpitechPGE2-2025/G-OOP-400-BDX-4-1-tekspice-11
-  EXECUTABLES: nanotekspice
+  MIRROR_URL: git@github.com:EpitechPGE2-2025/G-NWP-400-BDX-4-1-myftp-13.git
+  MIRROR_REPO: EpitechPGE2-2025/G-NWP-400-BDX-4-1-myftp-13.git
+  EXECUTABLES: my_ftp
 
 jobs:
   check_repository:
