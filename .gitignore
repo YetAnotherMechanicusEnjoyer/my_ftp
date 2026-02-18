@@ -1,0 +1,7 @@
+my_ftp
+.old
+compile_commands.json
+*.o
+.obj/
+.cache
+build/
