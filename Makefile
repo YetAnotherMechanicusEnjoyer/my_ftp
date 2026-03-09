@@ -5,11 +5,25 @@
 ## Compiles CXX files
 ##
 
-CC	= clang++
+CC	= g++
 
 SRC_DIR	=	src/
 
-SRC_FILES	=	main.cpp
+CMDS_FILES	=	Cdup.cpp	\
+							Cwd.cpp	\
+							Dele.cpp	\
+							Help.cpp	\
+							Noop.cpp	\
+							Pass.cpp	\
+							Pwd.cpp	\
+							Quit.cpp	\
+							User.cpp	\
+
+SRC_FILES	=	main.cpp	\
+						Client.cpp	\
+						Server.cpp	\
+						TCPSocket.cpp	\
+						$(addprefix Commands/, $(CMDS_FILES))
 
 SRC	=	$(addprefix $(SRC_DIR), $(SRC_FILES))
 
@@ -21,7 +35,7 @@ CPPFLAGS	=	-std=c++20 -Iinclude
 
 DFLAGS	=	-g -Wall -Wextra -Werror
 
-BINARY	=	my_ftp
+BINARY	=	myftp
 
 all: 	$(BINARY)
 
