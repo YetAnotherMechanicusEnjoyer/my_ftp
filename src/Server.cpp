@@ -28,6 +28,11 @@ void Server::initCommands() {
   _cmds.insert({"DELE", [&](Client& client, const std::string& args) { return cmdDele(client, args); } });
   _cmds.insert({"NOOP", [&](Client& client, const std::string& args) { return cmdNoop(client, args); } });
   _cmds.insert({"PWD", [&](Client& client, const std::string& args) { return cmdPwd(client, args); } });
+  _cmds.insert({"LIST", [&](Client& client, const std::string& args) { return cmdList(client, args); } });
+  _cmds.insert({"PASV", [&](Client& client, const std::string& args) { return cmdPasv(client, args); } });
+  _cmds.insert({"PORT", [&](Client& client, const std::string& args) { return cmdPort(client, args); } });
+  _cmds.insert({"RETR", [&](Client& client, const std::string& args) { return cmdRetr(client, args); } });
+  _cmds.insert({"STOR", [&](Client& client, const std::string& args) { return cmdStor(client, args); } });
 }
 
 void Server::initSocket() {

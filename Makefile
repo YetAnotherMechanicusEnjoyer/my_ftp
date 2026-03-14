@@ -13,10 +13,15 @@ CMDS_FILES	=	Cdup.cpp	\
 							Cwd.cpp	\
 							Dele.cpp	\
 							Help.cpp	\
+							List.cpp	\
 							Noop.cpp	\
 							Pass.cpp	\
+							Pasv.cpp	\
+							Port.cpp	\
 							Pwd.cpp	\
 							Quit.cpp	\
+							Retr.cpp	\
+							Stor.cpp	\
 							User.cpp	\
 
 SRC_FILES	=	main.cpp	\

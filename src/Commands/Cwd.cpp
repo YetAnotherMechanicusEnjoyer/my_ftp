@@ -15,7 +15,7 @@ void cmdCwd(Client &client, const std::string &args) {
       newDir = client.getCurrentDir() + newDir;
   }
 
-  client.sendCurrentDir(newDir);
+  client.setCurrentDir(newDir);
   client.sendMessage("250 Requested file action okay, completed.");
 }
 }
